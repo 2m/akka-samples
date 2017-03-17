@@ -1,7 +1,7 @@
 import com.typesafe.sbt.SbtMultiJvm.multiJvmSettings
 import com.typesafe.sbt.SbtMultiJvm.MultiJvmKeys.MultiJvm
 
-val akkaVersion = "2.5-M2"
+val akkaVersion = "2.5.0-RC1"
 
 val `akka-sample-distributed-data-java` = project
   .in(file("."))
@@ -22,6 +22,7 @@ val `akka-sample-distributed-data-java` = project
     fork in run := true,
     // disable parallel tests
     parallelExecution in Test := false,
-    licenses := Seq(("CC0", url("http://creativecommons.org/publicdomain/zero/1.0")))
+    licenses := Seq(("CC0", url("http://creativecommons.org/publicdomain/zero/1.0"))),
+    resolvers += "Staging Repo" at "https://oss.sonatype.org/content/repositories/comtypesafe-1767/"
   )
   .configs (MultiJvm)

@@ -1,7 +1,7 @@
 import com.typesafe.sbt.SbtMultiJvm.multiJvmSettings
 import com.typesafe.sbt.SbtMultiJvm.MultiJvmKeys.MultiJvm
 
-val akkaVersion = "2.5-M2"
+val akkaVersion = "2.5.0-RC1"
 
 lazy val `akka-sample-cluster-scala` = project
   .in(file("."))
@@ -25,6 +25,7 @@ lazy val `akka-sample-cluster-scala` = project
     mainClass in (Compile, run) := Some("sample.cluster.simple.SimpleClusterApp"),
     // disable parallel tests
     parallelExecution in Test := false,
-    licenses := Seq(("CC0", url("http://creativecommons.org/publicdomain/zero/1.0")))
+    licenses := Seq(("CC0", url("http://creativecommons.org/publicdomain/zero/1.0"))),
+    resolvers += "Staging Repo" at "https://oss.sonatype.org/content/repositories/comtypesafe-1767/"
   )
   .configs (MultiJvm)

@@ -1,7 +1,7 @@
 organization := "com.typesafe.akka.samples"
 name := "akka-sample-fsm-java"
 
-val akkaVersion = "2.5-M2"
+val akkaVersion = "2.5.0-RC1"
 
 scalaVersion := "2.12.1"
 libraryDependencies ++= Seq(
@@ -11,3 +11,5 @@ libraryDependencies ++= Seq(
        "com.novocode"  % "junit-interface" % "0.10"      % Test)
 
 licenses := Seq(("CC0", url("http://creativecommons.org/publicdomain/zero/1.0")))
+
+resolvers += "Staging Repo" at "https://oss.sonatype.org/content/repositories/comtypesafe-1767/"
