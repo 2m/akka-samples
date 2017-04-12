@@ -1,7 +1,7 @@
 organization := "com.typesafe.akka.samples"
 name := "akka-sample-supervision-java"
 
-val akkaVersion = "2.5.0-RC1"
+val akkaVersion = "2.5.0"
 
 scalaVersion := "2.12.1"
 libraryDependencies ++= Seq(
@@ -12,4 +12,4 @@ libraryDependencies ++= Seq(
 
 licenses := Seq(("CC0", url("http://creativecommons.org/publicdomain/zero/1.0")))
 
-resolvers += "Staging Repo" at "https://oss.sonatype.org/content/repositories/comtypesafe-1767/"
+resolvers += "Staging Repo" at "https://oss.sonatype.org/content/repositories/comtypesafe-1794/"

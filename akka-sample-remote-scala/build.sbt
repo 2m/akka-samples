@@ -8,4 +8,4 @@ libraryDependencies ++= Seq(
 
 licenses := Seq(("CC0", url("http://creativecommons.org/publicdomain/zero/1.0")))
 
-resolvers += "Staging Repo" at "https://oss.sonatype.org/content/repositories/comtypesafe-1767/"
+resolvers += "Staging Repo" at "https://oss.sonatype.org/content/repositories/comtypesafe-1794/"
